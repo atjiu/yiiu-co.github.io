@@ -16,7 +16,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">朋也项目集合</h1>
         </header>
-        <div className="container">
+        <div className="app-body">
           <div className="row">
           {
             this.state.items.map(v => [
@@ -31,7 +31,7 @@ class App extends Component {
             ])
           }
           </div>
-          <a href="https://github.com/tomoya92/yiiu.co.github.io/issues" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/tomoya92/yiiu.co/issues" target="_blank" rel="noopener noreferrer">
             <div className="issue">有问题?</div>
           </a>
         </div>

@@ -23,7 +23,7 @@
   font-size: large;
 }
 
-.container {
+.app-body {
   padding: 15px 0;
 }
 
@@ -78,10 +78,18 @@ a:visited {
   border: 2px solid #222;
   line-height: 70px;
   border-radius: 35px;
+  background-color: #fff;
 }
 
 .issue:hover {
   cursor: pointer;
   background-color: #222;
   color: #fff;
+}
+
+@media (max-width: 64em) {
+  .issue {
+    right: 20px;
+    bottom: 20px;
+  }
 }
