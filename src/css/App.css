@@ -1,0 +1,87 @@
+@import 'flexboxgrid.css';
+
+* {
+  word-break: break-all
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  height: 60px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.container {
+  padding: 15px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #222;
+  text-decoration: none;
+}
+.row {
+  margin: 0 20px;
+}
+.col-md-3 {
+  width: 100%;
+}
+
+.item {
+  border: 2px solid #222;
+  border-radius: 5px;
+  margin: 15px 0;
+  padding: 20px;
+}
+
+.name {
+  font-size: 20px;
+  padding: 0 0 10px;
+}
+.source_url {
+  text-align: left;
+  font-size: 14px;
+  padding: 5px 0;
+}
+.desc {
+  font-size: 14px;
+  text-align: left;
+  color: #7d7d7d;
+}
+
+.issue {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #222;
+  line-height: 70px;
+  border-radius: 35px;
+}
+
+.issue:hover {
+  cursor: pointer;
+  background-color: #222;
+  color: #fff;
+}
