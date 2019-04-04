@@ -16,7 +16,12 @@
 }
 
 .App-title {
+  position: relative;
+  top: -100px;
   font-size: 1.5em;
+  animation-name: apptitle;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 .App-intro {
@@ -54,26 +59,47 @@ a:visited {
   padding: 20px;
   max-height: 148px;
   overflow: hidden;
+  opacity: 0;
+  animation-name: item;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
 .name {
   font-size: 20px;
   padding: 0 0 10px;
+  opacity: 0;
+  animation-name: itemname;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
 }
 .source_url {
   text-align: left;
   font-size: 14px;
   padding: 5px 0;
+  opacity: 0;
+  animation-name: itemsourceurl;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
 }
 .desc {
   font-size: 14px;
   text-align: left;
   color: #7d7d7d;
+  opacity: 0;
+  animation-name: itemdesc;
+  animation-duration: 2s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
 }
 
 .issue {
   position: fixed;
-  right: 50px;
+  opacity: 0;
+  right: -100px;
   bottom: 50px;
   width: 70px;
   height: 70px;
@@ -81,6 +107,10 @@ a:visited {
   line-height: 70px;
   border-radius: 35px;
   background-color: #fff;
+  animation-name: issue;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
 }
 
 .issue:hover {
@@ -93,5 +123,59 @@ a:visited {
   .issue {
     right: 20px;
     bottom: 20px;
+  }
+}
+
+@keyframes apptitle {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes item {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes itemname {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes itemsourceurl {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes itemdesc {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes issue {
+  from {
+    opacity: 0;
+    right: -100px;
+  }
+  to {
+    opacity: 1;
+    right: 20px;
   }
 }
