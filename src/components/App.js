@@ -8,7 +8,7 @@ class App extends Component {
     super(props);
     this.state = {
       items: items
-    }
+    };
   }
   render() {
     return (
@@ -18,20 +18,13 @@ class App extends Component {
         </header>
         <div className="app-body">
           <div className="row">
-          {
-            this.state.items.map(v => [
+            {this.state.items.map((v) => [
               <div className="col-md-3">
-                <Item
-                  name={v.name}
-                  online_url={v.online_url}
-                  source_url={v.source_url}
-                  desc={v.desc}
-                />
+                <Item name={v.name} online_url={v.online_url} source_url={v.source_url} desc={v.desc} />
               </div>
-            ])
-          }
+            ])}
           </div>
-          <a href="https://github.com/tomoya92/yiiu.co/issues" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/yiiu-co/yiiu-co.github.io/issues" target="_blank" rel="noopener noreferrer">
             <div className="issue">有问题?</div>
           </a>
         </div>
