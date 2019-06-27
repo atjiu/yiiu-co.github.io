@@ -58,5 +58,11 @@
     "online_url": "https://play.google.com/store/apps/details?id=cn.tomoya.apps",
     "source_url": "https://github.com/tomoya92/android-apps",
     "desc": "android原生开发的一个资讯app，在app里通过jsoup抓取网页解析并展示，安卓的用户可以安装体验一下"
+  },
+  {
+    "name": "CNodeJS-Swift",
+    "online_url": "",
+    "source_url": "https://github.com/tomoya92/CNodeJS-Swift",
+    "desc": "使用Swift开发的cnodejs.org的app，纯代码布局，涉及组件的使用，网络的请求，主题的切换等，可惜的是上架被拒8次，只能自行打包安装了"
   }
 ]
