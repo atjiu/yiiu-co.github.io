@@ -18,8 +18,8 @@ class App extends Component {
         </header>
         <div className="app-body">
           <div className="row">
-            {this.state.items.map((v) => [
-              <div className="col-md-3">
+            {this.state.items.map((v, i) => [
+              <div className="col-md-3" key={i}>
                 <Item name={v.name} online_url={v.online_url} source_url={v.source_url} desc={v.desc} />
               </div>
             ])}

@@ -10,25 +10,23 @@
 
 .App-header {
   background-color: #222;
-  height: 60px;
-  padding: 20px;
+  height: 90px;
+  padding: 10px;
   color: white;
 }
 
 .App-title {
   position: relative;
   top: -100px;
-  font-size: 1.5em;
+  font-size: 2rem;
   animation-name: apptitle;
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
-.App-intro {
-  font-size: large;
-}
-
 .app-body {
+  margin: 0 auto;
+  max-width: 1200px;
   padding: 15px 0;
 }
 
@@ -57,7 +55,7 @@ a:visited {
   border-radius: 5px;
   margin: 15px 0;
   padding: 20px;
-  max-height: 148px;
+  max-height: 200px;
   overflow: hidden;
   opacity: 0;
   animation-name: item;
@@ -67,7 +65,7 @@ a:visited {
 }
 
 .name {
-  font-size: 20px;
+  font-size: 1.5rem;
   padding: 0 0 10px;
   opacity: 0;
   animation-name: itemname;
@@ -76,8 +74,10 @@ a:visited {
   animation-fill-mode: forwards;
 }
 .source_url {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   text-align: left;
-  font-size: 14px;
   padding: 5px 0;
   opacity: 0;
   animation-name: itemsourceurl;
@@ -86,7 +86,6 @@ a:visited {
   animation-fill-mode: forwards;
 }
 .desc {
-  font-size: 14px;
   text-align: left;
   color: #7d7d7d;
   opacity: 0;
